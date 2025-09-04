@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💀%3C/text%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💀 Ugly Face Tracker 💀</title>
+    <meta name="description" content="Upload your disgusting shoes and get absolutely roasted! The most hilariously useless shoe tracking app ever created." />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+      
+      body {
+        font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif !important;
+      }
+      
+      /* Custom animations */
+      .fly {
+        position: fixed;
+        font-size: 24px;
+        pointer-events: none;
+        z-index: 10;
+        transition: transform 3s ease-in-out;
+      }
+      
+      @keyframes slime-drip {
+        0% { transform: translateY(-10px); }
+        100% { transform: translateY(10px); }
+      }
+      
+      .slime-border {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .slime-border::before {
+        content: '💧';
+        position: absolute;
+        top: -5px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 20px;
+        animation: slime-drip 2s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
